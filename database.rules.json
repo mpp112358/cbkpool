@@ -1,0 +1,28 @@
+{
+  "rules": {
+    "allowedUsers": {
+      ".read": "auth != null",
+      "$uid": {
+        ".write": "auth != null && (root.child('allowedUsers').child(auth.uid).child('role').val() === 'admin' || ($uid === auth.uid && newData.child('email').val() === auth.token.email))"
+      }
+    },
+    "preApproved": {
+      ".read": "auth != null",
+      ".write": "auth != null && root.child('allowedUsers').child(auth.uid).child('role').val() === 'admin'"
+    },
+    "config": {
+      ".read": "auth != null",
+      ".write": "auth != null && root.child('allowedUsers').child(auth.uid).child('role').val() === 'admin'"
+    },
+    "pools": {
+      ".read": "auth != null",
+      ".write": "auth != null && root.child('allowedUsers').child(auth.uid).child('role').val() === 'admin'"
+    },
+    "reservations": {
+      ".read": "auth != null",
+      "$resId": {
+        ".write": "auth != null && (root.child('allowedUsers').child(auth.uid).child('role').val() === 'admin' || (newData.exists() && newData.child('userEmail').val() === auth.token.email) || (data.exists() && data.child('userEmail').val() === auth.token.email))"
+      }
+    }
+  }
+}

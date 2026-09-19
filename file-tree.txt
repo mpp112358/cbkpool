@@ -1,0 +1,21 @@
+cbkpool/
+├── package.json
+├── webpack.config.js
+├── database.rules.json
+├── public/
+│   └── index.html
+└── src/
+    ├── css/
+    │   └── style.css
+    ├── js/
+    │   ├── firebase.js       # Firebase initialization & DB helpers
+    │   ├── rules.js          # Business logic: overflow, quotas, booking constraints
+    │   ├── store.js          # App state management
+    │   ├── views/
+    │   │   ├── login.js
+    │   │   ├── mainReservation.js
+    │   │   ├── makeReservation.js
+    │   │   ├── statistics.js
+    │   │   └── config.js
+    │   └── app.js            # Main entry point & router
+    └── index.js              # Webpack entry

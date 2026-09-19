@@ -1,0 +1,107 @@
+{
+  "config": {
+    "defaultQuota": 15,
+    "maxFutureWeeks": 4,
+    "blockedDates": [
+      "2026-12-25"
+    ],
+    "timeSlots": {
+      "mon": [
+        { "id": "slot1", "label": "08:30 - 09:30" },
+        { "id": "slot2", "label": "09:30 - 10:25" },
+        { "id": "slot3", "label": "10:25 - 11:45" },
+        { "id": "slot4", "label": "10:25 - 11:45" },
+        { "id": "slot5", "label": "12:15 - 13:15" },
+        { "id": "slot6", "label": "13:15 - 14:10" },
+        { "id": "slot7", "label": "14:10 - 15:10" },
+        { "id": "slot8", "label": "15:10 - 16:05" },
+        { "id": "slot9", "label": "16:10 - 17:00" }
+      ],
+      "tue": [
+        { "id": "slot1", "label": "08:30 - 09:30" },
+        { "id": "slot2", "label": "09:30 - 10:25" },
+        { "id": "slot3", "label": "10:25 - 11:45" },
+        { "id": "slot4", "label": "10:25 - 11:45" },
+        { "id": "slot5", "label": "12:15 - 13:15" },
+        { "id": "slot6", "label": "13:15 - 14:10" },
+        { "id": "slot7", "label": "14:10 - 15:10" },
+        { "id": "slot8", "label": "15:10 - 16:05" },
+        { "id": "slot9", "label": "16:10 - 17:00" }
+      ],
+      "wed": [
+        { "id": "slot1", "label": "08:30 - 09:30" },
+        { "id": "slot2", "label": "09:30 - 10:25" },
+        { "id": "slot3", "label": "10:25 - 11:45" },
+        { "id": "slot4", "label": "10:25 - 11:45" },
+        { "id": "slot5", "label": "12:15 - 13:15" },
+        { "id": "slot6", "label": "13:15 - 14:10" },
+        { "id": "slot7", "label": "14:10 - 15:10" },
+        { "id": "slot8", "label": "15:10 - 16:05" },
+        { "id": "slot9", "label": "16:10 - 17:00" }
+      ],
+      "thu": [
+        { "id": "slot1", "label": "08:30 - 09:30" },
+        { "id": "slot2", "label": "09:30 - 10:25" },
+        { "id": "slot3", "label": "10:25 - 11:45" },
+        { "id": "slot4", "label": "10:25 - 11:45" },
+        { "id": "slot5", "label": "12:15 - 13:15" },
+        { "id": "slot6", "label": "13:15 - 14:10" },
+        { "id": "slot7", "label": "14:10 - 15:10" },
+        { "id": "slot8", "label": "15:10 - 16:05" },
+        { "id": "slot9", "label": "16:10 - 17:00" }
+      ],
+      "fri": [
+              {
+                "id": "slot1",
+                "label": "08:30 - 09:30"
+              },
+        { "id": "slot2", "label": "09:30 - 10:25" },
+        { "id": "slot3", "label": "10:25 - 11:45" },
+        { "id": "slot4", "label": "10:25 - 11:45" },
+        { "id": "slot5", "label": "12:15 - 13:15" },
+        { "id": "slot6", "label": "13:15 - 14:10" },
+        { "id": "slot7", "label": "14:10 - 15:10" },
+        { "id": "slot8", "label": "15:10 - 16:05" },
+        { "id": "slot9", "label": "16:10 - 17:00" }
+      ]
+    }
+  },
+  "allowedUsers": {
+    "ESrYuceeUbRd2y4KTtYUuJ3Hn552": {
+      "email": "mperez@fomento.edu",
+      "role": "admin"
+    },
+    "t6rNnxm5vKfTPkubYSCDHS34oNu1": {
+      "email": "manuelperezpinar@gmail.com",
+      "role": "teacher",
+      "customQuota": 20
+    }
+  },
+  "pools": {
+    "pool_1": {
+      "id": "pool_1",
+      "name": "1st Floor Locker",
+      "capacity": 30,
+      "order": 1
+    },
+    "pool_2": {
+      "id": "pool_2",
+      "name": "2nd Floor Locker",
+      "capacity": 40,
+      "order": 2
+    }
+  },
+  "reservations": {
+    "res_sample_101": {
+      "id": "res_sample_101",
+      "userEmail": "mperez@fomento.edu",
+      "date": "2026-09-14",
+      "slotId": "slot1",
+      "totalDevices": 10,
+      "allocations": {
+        "pool_1": 10
+      },
+      "createdAt": 1789315200000
+    }
+  }
+}
